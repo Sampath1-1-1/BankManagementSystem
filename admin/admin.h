@@ -150,11 +150,11 @@ bool updateAdminPassword(int connFD) {
 
         // Write the updated password information to the file
         const char* header = "#ifndef ADMIN_CRED\n#define ADMIN_CRED\n\n";
-        const char* admin_user_name = "#define ADMIN_USER_NAME \"abhay\"\n";
+        const char* admin_user_name = "#define ADMIN_USER_NAME \"sampath\"\n";
         char admin_password[1200];
         
         // Format the password entry
-        snprintf(admin_password, sizeof(admin_password), "#define ADMIN_PASS_WORD \"%s\" // \"abhay\"\n", newPassword);
+        snprintf(admin_password, sizeof(admin_password), "#define ADMIN_PASS_WORD \"%s\" // \"sampath\"\n", newPassword);
         const char* footer = "\n#endif\n";
 
         // Write the new content to the file
